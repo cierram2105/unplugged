@@ -97,9 +97,81 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* HEADER ======================================== */
 
+.main-header {
+  width: 100%;
+}
 
+.logo {
+  width: 100%;
+}
 
+nav { /* Nav Area  PARENT================================ */
+  width: 100%;
+}
+
+nav ul {
+  width: 33.33%;
+}
+
+/* MAIN CONTENT ======================================== */
+
+main {
+  width: 96%;
+  padding: 0 2%;
+  margin: auto;
+  clear: both;
+}
+
+.hero-area { /* Hero Area PARENT ================ */
+  width: 100%;
+}
+
+.top-story, .top-img { /* Top Story =============== */
+  width: 92%;
+}
+
+.top-img {
+  width: 92%;
+  margin: auto;
+}
+
+.sidebar { /* Sidebar area PARENT =========== */
+  width: 100%;
+}
+
+.sidebar-newsletter, .sidebar-about-us, .sidebar-faqs {
+  width: 92%;
+}
+
+.feed { /* Feed Area PARENT ==================== */
+  width: 100%;
+}
+
+.feed-item {
+  width: 92%;
+}
+
+.feed-type { /* h3 Styling ================= */
+  width: 20%;
+}
+
+.feed-img, .feed-info {
+  width: 43%;
+}
+
+/* FOOTER ======================================== */
+
+footer {
+  width: 100%;
+  margin: auto;
+}
+
+.footer-logo {
+  width: 47.5%;
+  margin: auto;
+}
 
 
 
