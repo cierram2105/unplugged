@@ -128,8 +128,8 @@ main {
   width: 100%;
 }
 
-.top-story, .top-img { /* Top Story =============== */
-  width: 92%;
+.top-story { /* Top Story =============== */
+  width: 100%;
 }
 
 .top-img {
@@ -139,6 +139,10 @@ main {
 
 .sidebar { /* Sidebar area PARENT =========== */
   width: 100%;
+}
+
+.sidebar-about-us, .sidebar-faqs {
+  display: none;
 }
 
 .sidebar-newsletter, .sidebar-about-us, .sidebar-faqs {
@@ -157,8 +161,14 @@ main {
   width: 20%;
 }
 
-.feed-img, .feed-info {
-  width: 43%;
+.feed-img {
+  width: 45%;
+}
+
+/* =================== ABOUT PAGE FOUNDATIONAL STYLING ============== */
+
+.contact-info {
+  width: 100%;
 }
 
 /* FOOTER ======================================== */
@@ -271,15 +281,86 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet-esque styles here!*/
+
+/* ============ HEADER ================== */
+
+.main-header {
+  width: 100%;
+  margin: auto;
+  padding: 0 3%;
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+.main-header .header-wrapper {
+  width: 94%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 40%;
+  float: left;
+}
+
+nav {
+  width: 60%;
+  float: left;
+}
+
+/* ========== Featured News Item ============= */
+
+.top-story {
+  width: 100%;
+}
+
+.top-img {
+  width: 57%;
+  float: left;
+  padding-right: 3%;
+}
+
+.top-info {
+  width: 40%;
+  float: left;
+}
+
+/* ============ Sidebar Section ================= */
+
+.sidebar {
+  clear: both;
+  width: 37%;
+  float: right;
+}
+
+.sidebar-about-us, .sidebar-faqs {
+  display: block;
+}
+
+/* ============== News Feed Section ================= */
+
+.feed {
+  width: 60%;
+  float: left;
+}
+
+.feed-img {
+  width: 35%;
+}
+
+.feed-info {
+  width: 57%;
+}
+
+.footer-logo {
+  width: 30%;
+  margin: auto;
+}
+
+}
+
+@media only screen and (min-width: 940px) {
+  /*Desktop-esque styles here!*/
 }
 
 /* ==========================================================================
