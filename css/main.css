@@ -357,10 +357,27 @@ nav {
   margin: auto;
 }
 
+/* ========================= ABOUT PAGE ======================== */
+
+.contact-info {
+  width: 100%;
+}
+
 }
 
 @media only screen and (min-width: 940px) {
   /*Desktop-esque styles here!*/
+
+.hero-area {
+  width: 60%;
+  float: left;
+}
+
+.top-story {
+  width: 56%;
+}
+
+
 }
 
 /* ==========================================================================
