@@ -140,15 +140,17 @@ figure {
 }
 
 .btn {
-   color: #fff;
-   font-weight: 700;
-   text-transform: uppercase;
-   line-height: 2.5;
-   text-align: center;
-   box-shadow: 2px 2px 0px #DADADA;
-   height: 2.5em;
-   width: 100%;
-   display: block;
+ background-color: #b21e49;
+ border: none;
+ color: #fff;
+ font-weight: 700;
+ text-transform: uppercase;
+ line-height: 2.5;
+ text-align: center;
+ box-shadow: 2px 2px 0px #DADADA;
+ height: 2.5em;
+ width: 100%;
+ display: block;
 }
 
 input.btn {
@@ -226,12 +228,18 @@ main {
   padding: 0 10px 20px 10px;
 }
 
-.sidebar-about-us, .sidebar-faqs {
-  display: none;
+.sidebar-newsletter input {
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.sidebar-newsletter, .sidebar-about-us, .sidebar-faqs {
-  width: 92%;
+.sidebar-newsletter input[type="text"] {
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+.sidebar-about-us, .sidebar-faqs {
+  display: none;
 }
 
 /* Feed Area PARENT ==================== */
@@ -240,22 +248,41 @@ main {
   width: 100%;
 }
 
+.feed p {
+  display: none;
+}
+
 .feed-item {
-  width: 92%;
+  clear: both;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
 }
 
 .feed-type { /* h3 Styling ================= */
-  width: 20%;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.feed-item h2 {
+  margin: 0;
+}
+
+.feed-item h2 a {
+  color: #222;
 }
 
 .feed-img {
   width: 45%;
+  float: left;
+  margin: 0;
+  padding-right: 3%;
 }
 
 /* =================== ABOUT PAGE FOUNDATIONAL STYLING ============== */
 
 .contact-info {
   width: 100%;
+  padding-top: 30px;
 }
 
 /* FOOTER ======================================== */
@@ -264,6 +291,9 @@ footer {
   width: 100%;
   margin: auto;
   clear: both;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .footer-logo {
@@ -449,6 +479,13 @@ nav {
 
 .contact-info {
   width: 100%;
+  float: left;
+}
+
+/* ======================== Footer =========================== */
+.footer-logo {
+  width: 30%;
+  margin: auto;
 }
 
 }
