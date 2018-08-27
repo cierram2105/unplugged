@@ -201,10 +201,6 @@ main {
   clear: both;
 }
 
-.hero-area { /* Hero Area PARENT ================ */
-  width: 100%;
-}
-
 /* Top Story =============== */
 
 .top-story {
@@ -213,7 +209,7 @@ main {
 }
 
 .top-img {
-  width: 92%;
+  width: 100%;
   margin: auto;
 }
 
@@ -284,6 +280,24 @@ main {
   width: 100%;
   padding-top: 30px;
 }
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+/* ================= FAQ PAGE FOUNDATIONAL STYLING ============= */
+
+/* Start off here... it's where you left off */
 
 /* FOOTER ======================================== */
 
