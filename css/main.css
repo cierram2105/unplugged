@@ -157,6 +157,12 @@ input.btn {
   background-color: #ff1256;
 }
 
+.last-item {
+  border-bottom: none !important;
+}
+img {
+  width: 100%;
+}
 
 /* HEADER ======================================== */
 
@@ -169,6 +175,10 @@ input.btn {
 .logo {
   width: 100%;
   margin: 0 auto;
+}
+
+.logo img {
+  width: 100%
 }
 
 nav { /* Nav Area  PARENT================================ */
@@ -210,7 +220,11 @@ main {
 
 .top-img {
   width: 100%;
-  margin: auto;
+  margin: 0;
+}
+
+.top-img img {
+  width: 100%;
 }
 
 /* Sidebar area PARENT =========== */
@@ -297,7 +311,13 @@ main {
 
 /* ================= FAQ PAGE FOUNDATIONAL STYLING ============= */
 
-/* Start off here... it's where you left off */
+.faqs-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.faqs-item h3 {
+  font-weight: 400;
+}
 
 /* FOOTER ======================================== */
 
@@ -440,10 +460,25 @@ nav {
   float: left;
 }
 
+nav ul {
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  border: none;
+  padding: 0 2%;
+  position: relative;
+}
+
 /* ========== Featured News Item ============= */
 
 .top-story {
   width: 100%;
+  padding-top: 40px;
+  padding-bottom: 110px;
 }
 
 .top-img {
@@ -467,6 +502,8 @@ nav {
 
 .sidebar-about-us, .sidebar-faqs {
   display: block;
+  border-bottom: 1px solid #ccc;
+  padding: 0 10px 20px 10px;
 }
 
 /* ============== News Feed Section ================= */
@@ -474,25 +511,29 @@ nav {
 .feed {
   width: 60%;
   float: left;
+  border-right: 1px solid #ccc;
+}
+
+.feed h2 {
+  font-size: 1.125em;
 }
 
 .feed-img {
   width: 35%;
 }
 
-.feed-info {
-  width: 57%;
+.feed-item {
+  padding-right: 20px;
 }
 
-.footer-logo {
-  width: 30%;
-  margin: auto;
+.feed-info {
+  width: 57%;
 }
 
 /* ========================= ABOUT PAGE ======================== */
 
 .contact-info {
-  width: 100%;
+  width: 40%;
   float: left;
 }
 
@@ -507,41 +548,85 @@ nav {
 @media only screen and (min-width: 940px) {
   /*Desktop-esque styles here!*/
 
-.hero-area {
-  width: 60%;
-}
+  h1 {
+    font-size: 1.6em;
+    line-height: 1.8;
+  }
 
-.top-story {
-  width: 60%;
-  float: left;
-}
+  h2 {
+    font-size: 1.4em;
+  }
 
-.sidebar {
-  float: right;
-  clear: none;
-}
+/* ========== Featured News Story Section ============= */
+
+  .top-story {
+    width: 60%;
+    float: left;
+    border: none;
+    padding-right: 2%;
+
+  }
+
+  .top-img {
+    width: 100%;
+    padding-bottom: 1em;
+  }
+
+  .top-img img {
+    max-width: 620px;
+  }
+
+  .top-info {
+    width: 100%;
+    float: none;
+  }
+
+/* ===================== Sidebar ========================= */
+
+  .sidebar {
+    float: right;
+    clear: none;
+    width: 30%;
+    border-left: 1px solid #ccc;
+  }
+
+  .sidebar-newsletter, .sidebar-about-us, .sidebar-faqs {
+    padding: 0 20px 20px 20px;
+  }
+
+  .sidebar-faqs {
+    border: none;
+  }
 
 /* ============= News Feed Section ============== */
 
-.feed {
-  width: 100%;
-  float: left;
-}
+  .feed {
+    width: 100%;
+    float: left;
+    clear: both;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    border-right: none;
+  }
 
-.feed p {
-  display: block;
-  margin-top: 0;
-}
+  .feed p {
+    display: block;
+    margin-top: 0;
+  }
 
-.feed-img {
-  width: 20%;
-}
+  .feed h2 {
+    margin: 0;
+  }
+
+  .feed-img {
+    width: 20%;
+  }
 
 /* =============== Footer ============= */
 
-.footer-logo {
-  width: 20%;
-}
+  .footer-logo {
+    width: 20%;
+  }
 
 }
 
