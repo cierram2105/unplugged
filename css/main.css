@@ -178,7 +178,7 @@ img {
 }
 
 .logo img {
-  width: 100%
+  width: 100%;
 }
 
 nav { /* Nav Area  PARENT================================ */
@@ -307,6 +307,22 @@ main {
 
 .strong {
   font-weight: 700;
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .mission {
@@ -486,6 +502,7 @@ footer {
   width: 100%;
   margin: auto;
   padding: 0 3%;
+  background-color: #dddddd;
 }
 
 .main-header .header-wrapper {
@@ -582,6 +599,13 @@ nav ul li {
   float: left;
 }
 
+.map-container {
+  padding-bottom: 40%;
+  margin: 30px 0;
+  width: 58%;
+  float: left;
+}
+
 .mission {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -621,6 +645,10 @@ nav ul li {
 
   h2 {
     font-size: 1.4em;
+  }
+
+  .main-header {
+    background-color: #dddddd;
   }
 
 /* ========== Featured News Story Section ============= */
