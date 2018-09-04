@@ -511,6 +511,7 @@ footer {
   margin: auto;
   padding: 0 3%;
   background-color: #dddddd;
+  overflow: hidden;
 }
 
 .main-header .header-wrapper {
