@@ -153,6 +153,10 @@ figure {
  display: block;
 }
 
+.btn i {
+  padding-right: 10px;
+}
+
 input.btn {
   background-color: #ff1256;
 }
@@ -183,6 +187,10 @@ img {
 
 nav { /* Nav Area  PARENT================================ */
   width: 100%;
+}
+
+nav i {
+  padding-right: 10px;
 }
 
 nav ul {
